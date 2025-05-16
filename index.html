@@ -261,7 +261,7 @@
       });
 
     // Tải file CSV cho liên kết affiliate
-    const affiliatePromise = fetch('YOUR_AFFILIATE_CSV_URL') // Thay bằng URL file CSV affiliate
+    const affiliatePromise = fetch('https://dl.dropboxusercontent.com/scl/fi/9m79diix8ox2m54n0q33k/link.txt?rlkey=yj1alpz3dvevjuhjeycun2frp&st=izupejs7&dl=0') // Thay bằng URL file CSV affiliate
       .then(response => response.text())
       .then(data => {
         affiliateLink = parseCSV(data, true);
